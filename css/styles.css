@@ -118,6 +118,7 @@ ul {
   border: none;
   color: var(--clean-white);
   background-color: var(--iris-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .main-button:hover,
@@ -140,6 +141,7 @@ ul {
   color: var(--clean-white);
   background-color: #404bbf;
   border: 1px solid transparent;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 /**
@@ -149,6 +151,7 @@ ul {
 */
 .header {
   border-bottom: 1px solid var(--border-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .flex {
   display: flex;
@@ -218,10 +221,18 @@ ul {
   |============================
 */
 .hero {
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero/people-office-hero.jpeg);
+
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: var(--hero-background);
   text-align: center;
+  max-width: 1440px;
+  height: 600px;
   padding-top: 188px;
   padding-bottom: 188px;
+  margin: 0 auto;
 }
 
 .main-title {
@@ -298,6 +309,7 @@ ul {
 .team-list-element {
   background-color: var(--clean-white);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-list-content {
@@ -310,8 +322,36 @@ ul {
 
 .team-list-text {
   font-size: 16px;
+  margin-bottom: 8px;
 }
 
+.social-media-list {
+  display: flex;
+}
+
+/**
+  |============================
+  | Customers
+  |============================
+*/
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-item {
+}
+
+.customers-link {
+  /* display: flex;
+  width: 168px;
+  height: 88px;
+  outline: solid 2px tomato; */
+}
+
+.customers-link:hover,
+.customers-link:focus {
+}
 /**
   |============================
   | Portfolio
@@ -332,6 +372,10 @@ ul {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+}
+.portfolio-list-element:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list-content {
