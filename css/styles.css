@@ -228,6 +228,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--hero-background);
+  background-size: cover;
   text-align: center;
   max-width: 1440px;
   height: 600px;
@@ -428,6 +429,7 @@ ul {
 .footer-contant {
   display: flex;
   gap: 120px;
+  align-items: baseline;
 }
 .footer-logo {
   display: inline-block;
@@ -473,4 +475,8 @@ ul {
 .footer-social-media-link:hover,
 .footer-social-media-link:focus {
   background-color: #31d0aa;
+}
+
+.footer-social-media-icon {
+  fill: var(--footer-text);
 }
