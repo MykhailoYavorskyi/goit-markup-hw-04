@@ -297,7 +297,7 @@ ul {
   color: var(--title);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: 0.02em;
@@ -328,10 +328,7 @@ ul {
 
 .team-list-content {
   text-align: center;
-  padding-top: 32px;
-  padding-right: 16px;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  padding: 32px 0;
 }
 
 .team-list-text {
@@ -342,6 +339,7 @@ ul {
 .social-media-list {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 .social-media-link {
   display: flex;
@@ -355,6 +353,10 @@ ul {
 .social-media-link:hover,
 .social-media-link:focus {
   background-color: var(--ocean-color);
+}
+
+.social-media-icon {
+  fill: var(--footer-text);
 }
 
 /**
@@ -373,13 +375,24 @@ ul {
 }
 
 .customers-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
   width: inherit;
   height: inherit;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
 }
 
 .customers-link:hover,
 .customers-link:focus {
-  fill: var(--ocean-color);
+  color: var(--ocean-color);
+  border-color: var(--ocean-color);
+}
+
+.customers-icon {
+  fill: currentColor;
 }
 /**
   |============================
